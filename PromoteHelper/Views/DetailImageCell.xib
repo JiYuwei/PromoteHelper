@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="418" id="KGk-i7-Jjw" customClass="DetailImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="419"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xRj-ip-utU">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="319" id="sNw-Gy-3SY"/>
+                            <constraint firstAttribute="width" constant="180" id="uIn-ga-Ifz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例截图：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-96-Uo7">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvm-wt-la0">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="WyK-2t-kad"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="上传截图"/>
+                        <connections>
+                            <action selector="uploadAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Zeq-kK-403"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj1-02-2Ct">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="提交任务"/>
+                        <connections>
+                            <action selector="submitAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nct-Np-GMh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="bj1-02-2Ct" secondAttribute="trailing" constant="17" id="1TP-VP-u3O"/>
+                    <constraint firstItem="Db1-96-Uo7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BxR-2W-BGF"/>
+                    <constraint firstItem="bj1-02-2Ct" firstAttribute="leading" secondItem="cvm-wt-la0" secondAttribute="trailing" constant="30" id="EVx-wa-Hwy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cvm-wt-la0" secondAttribute="bottom" constant="7" id="FGa-Pq-shU"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="baseline" secondItem="bj1-02-2Ct" secondAttribute="firstBaseline" id="LNq-fa-HHH"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="top" secondItem="bj1-02-2Ct" secondAttribute="top" id="LZe-0U-htn"/>
+                    <constraint firstItem="bj1-02-2Ct" firstAttribute="leading" secondItem="cvm-wt-la0" secondAttribute="trailing" constant="30" id="QUv-pz-HmW"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="firstBaseline" secondItem="bj1-02-2Ct" secondAttribute="baseline" id="RfI-qH-u8z"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="SKt-PP-Npw"/>
+                    <constraint firstItem="Db1-96-Uo7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TBC-vP-UYf"/>
+                    <constraint firstItem="bj1-02-2Ct" firstAttribute="width" secondItem="cvm-wt-la0" secondAttribute="width" id="UkI-18-chs"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="centerX" secondItem="Db1-96-Uo7" secondAttribute="centerX" id="ZOt-xc-nUR"/>
+                    <constraint firstItem="cvm-wt-la0" firstAttribute="top" secondItem="xRj-ip-utU" secondAttribute="bottom" constant="14" id="ZYI-H0-CS7"/>
+                    <constraint firstItem="xRj-ip-utU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lCr-AN-pv6"/>
+                    <constraint firstItem="xRj-ip-utU" firstAttribute="top" secondItem="Db1-96-Uo7" secondAttribute="bottom" constant="12" id="zsy-zK-hEL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="expImgView" destination="xRj-ip-utU" id="RIq-jr-Zrd"/>
+                <outlet property="submitBtn" destination="bj1-02-2Ct" id="oxI-cE-I6b"/>
+                <outlet property="uploadBtn" destination="cvm-wt-la0" id="wf4-n1-B97"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="319"/>
+        </tableViewCell>
+    </objects>
+</document>

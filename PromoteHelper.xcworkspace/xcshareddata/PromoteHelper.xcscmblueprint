@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5d021915-d35b-431e-b5b2-80bf59f700bc",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5d021915-d35b-431e-b5b2-80bf59f700bc" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5d021915-d35b-431e-b5b2-80bf59f700bc" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "513AAC6C-5974-4687-8B68-BE369010B764",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5d021915-d35b-431e-b5b2-80bf59f700bc" : "Campus%20Life\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PromoteHelper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PromoteHelper\/PromoteHelper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/5vn-server.shwilling.com\/scheduler",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5d021915-d35b-431e-b5b2-80bf59f700bc"
+    }
+  ]
+}

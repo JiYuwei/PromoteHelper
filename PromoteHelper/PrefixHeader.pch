@@ -1,0 +1,87 @@
+//
+//  PrefixHeader.pch
+//  PromoteHelper
+//
+//  Created by 纪宇伟 on 15/11/24.
+//  Copyright © 2015年 willing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define BASE_COLOR [UIColor colorWithRed:69/255.f green:175/255.f blue:223/255.f alpha:1]
+#define BUTTON_COLOR [UIColor colorWithRed:0.00f green:0.46f blue:1.00f alpha:1.00f]
+
+#define SYSVERSION [[UIDevice currentDevice]systemVersion].floatValue
+#define LOCVERSION [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]
+#define BUNDLE_ID @"com.willing.promotehelper"
+
+#define CACHE_JSON_TYPE             @"JSON"
+#define CACHE_QUERY_LIMIT 100
+#define DB_JSON_MAX_RECORD 5000
+
+
+//测试接口：
+//#define BASE_URL @"http://wechat-dev.shwilling.com:3605"
+//#define DOWN_URL @"http://wechat-dev.shwilling.com:3605/index.html"
+
+//发布接口：
+#define BASE_URL   @"http://promote.shwilling.com/"
+#define DOWN_URL   @"http://promote.shwilling.com/index.html"
+
+
+#define UPDATE_URL @"https://promote.shwilling.com:444/PromoteHelper.plist"
+#define RULE_URL   @"http://api.shwilling.com/z_agreement"
+
+#define LOGIN_URL        @"/user/login"
+#define WX_LOGIN_URL     @"/user/wechat_login"
+
+#define REGISTER_URL     @"/user/register"
+#define SCHOOLER_REG_URL @"/user/schooler_register"
+#define OTHER_REG_URL    @"/user/other_register"
+#define FORGET_PWD_URL   @"/user/forget_password"
+
+#define PERSON_INFO_URL  @"/user/person_info"
+
+#define GETVCODE_URL     @"/user/send_sms_code"
+#define APPLIST_URL      @"/applist/getApplist"
+#define UPLOAD_APP_URL   @"/applist/user_local_applist"
+
+#define UPLOAD_TASK_URL  @"/applist/upload_user_app_task"
+#define GOING_TASK_URL   @"/applist/going_app_task"
+#define FINISH_TASK_URL  @"/applist/finished_app_task"
+#define UPLOAD_IMG_URL   @"/applist/upload_img"
+
+#define DOWN_PEOPLE_URL      @"/user/down_people_detail"
+#define DOWN_TASK_URL        @"/user/down_people_task"
+#define DOWN_TASK_DETAIL_URL @"/user/down_people_task_detail"
+
+#define MOBILE     @"mobile"
+#define PASSWORD   @"password"
+#define REPASSWORD @"repassword"
+#define VCODE      @"vcode"
+#define REALNAME   @"name"
+#define NICKNAME   @"nickname"
+#define PROCODE    @"code"
+#define IDCODE     @"id_code"
+#define SCHOOL     @"school"
+#define UPPCODE    @"upper_code"
+
+#define PROMOTER_CODE @"promoter_code"
+#define APP_ID   @"app_id"
+
+#define ERROR_CODE @"errcode"
+#define ERROR_MSG  @"errmsg"
+
+
+#define USER_DATA         @"UserData"
+#define USER_CHANGED      @"KeyUserChanged"
+#define INSTALL_CHANGED   @"KeyInstallChanged"
+#define USER_DEFAULT_BOOL @"UserDefaultBool"
+#define USER_WX_BOOL      @"UserWechatBool"
+#define WX_LOGIN_DATA     @"WxLoginData"
+
+#endif /* PrefixHeader_pch */
